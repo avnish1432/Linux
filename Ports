@@ -1,0 +1,38 @@
+https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/4/html/security_guide/ch-ports
+https://www.cyberciti.biz/faq/how-to-check-open-ports-in-linux-using-the-cli/
+
+$ cat /etc/services | less
+# lsof -i    # list of open ports
+# ss -tulpn  # ist all open TCP and UDP ports
+# netstat -tnlup
+# sudo lsof -i -P -n | grep LISTEN
+# sudo netstat -tulpn | grep LISTEN
+
+
+-a will show all sockets that are listening and all non-listening sockets too
+-l only shows ports which are actively listening
+-v means “verbose” and tells netstat to include additional information about any address families that are not currently configured
+-t restricts the listing to TCP connections only
+-u restricts the listing to UDP connections only
+-n tells netstat to display the numerical addresses too
+-p adds the process ID (PID) as well as the name of the program
+
+By using nmap. Note. Nmap is capable of revealing a lot of information which can make system administrators think that you are of an ill intent. 
+So, therefore, only use nmap on your local systems as done here.  # sudo nmap -n -PN -sT -sU -p- localhost
+
+
+Port    Port	Protocol
+21	FTP	TCP
+22	SSH/SCP	TCP
+23	TELNET	TCP
+25	SMTP	TCP
+53	DNS	TCP, UDP
+67,68	DHCP	UDP
+80	HTTP	TCP
+110	POP3	TCP
+111	Portmapper	TCP, UDP
+123	NTP	UDP
+137	NetBIOS	TCP, UDP
+143	IMAP	TCP, UDP
+161,162	SNMP	UDP
+443	HTTPS	TCP
