@@ -1,0 +1,18 @@
+Source:
+
+https://www.thegeekstuff.com/2011/02/linux-boot-process/
+https://www.freecodecamp.org/news/the-linux-booting-process-6-steps-described-in-detail/
+https://www.baeldung.com/linux/boot-process
+https://www.javatpoint.com/linux-boot-process-step-by-step-explained
+https://www.learnitguide.net/2015/11/linux-boot-process-step-by-step.html?m=1
+
+
+The stages involved in Linux Boot Process are:
+1. BIOS
+2. Boot Loader
+- MBR
+- GRUB
+3. Kernel
+4. Init
+5. Runlevel scripts
+6. User Interface
