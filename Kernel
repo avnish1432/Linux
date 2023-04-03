@@ -1,0 +1,19 @@
+Troubleshoot | RHEL-7 Kernel panic error
+
+Ref: 
+
+https://www.redhat.com/sysadmin/linux-kernel-panic
+https://www.liainfraservices.com/blog/how-to-solve-kernel-panic-error-in-linux/
+
+kexec allows you to boot into another kernel from an existing (and running) kernel, 
+and kdump is a kexec-based crash-dumping mechanism for Linux.
+
+7 Steps to Troubleshoot RHEL-7 Kernel panic error in Linux: This happens mostly because of initramfs.img file missing or corrupted
+
+1.Boot the system in rescue mode
+2.Log in using the root account
+3.Navigate to /boot
+4. See if initramfs.img file is available (If it is available, it must be corrupted
+5.find kernel version (uname -r)
+6.mkinitrd initramfs-kernel_version.img kernel_version
+7.Boot the machine
