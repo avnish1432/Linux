@@ -1,6 +1,6 @@
-$ cat sos_commands/subscription_manager/subscription-manager_identity; cat sos_commands/subscription_manager/subscription-manager_list_--installed; cat sos_commands/subscription_manager/subscription-manager_release_--list; cat sos_commands/subscription_manager/subscription-manager_release_--show; cat etc/rhsm/rhsm.conf; cat sos_commands/yum/yum_-C_repolist; cat etc/redhat-release;
+# cat sos_commands/subscription_manager/subscription-manager_identity; cat sos_commands/subscription_manager/subscription-manager_list_--installed; cat sos_commands/subscription_manager/subscription-manager_release_--list; cat sos_commands/subscription_manager/subscription-manager_release_--show; cat etc/rhsm/rhsm.conf; cat sos_commands/yum/yum_-C_repolist; cat etc/redhat-release;
 
 
-$ grep satellite-6 installed-rpms; cat sos_commands/foreman/hammer_ping; cat sos_commands/foreman/foreman-maintain_service_status | tail -5; cat free; cat sos_commands/yum/yum_-C_repolist; cat sos_commands/foreman/foreman_tasks_tasks | grep -E 'paused|planning|running'; cat sos_commands/foreman/smart_proxies;
+# grep satellite-6 installed-rpms; cat sos_commands/foreman/hammer_ping; cat sos_commands/foreman/foreman-maintain_service_status | tail -5; cat free; cat sos_commands/yum/yum_-C_repolist; cat sos_commands/foreman/foreman_tasks_tasks | grep -E 'paused|planning|running'; cat sos_commands/foreman/smart_proxies;
 
-$
+
